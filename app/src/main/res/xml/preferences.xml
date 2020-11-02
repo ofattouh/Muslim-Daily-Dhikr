@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/GPS_category">
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="auto_detect_switch"
+            android:summary="@string/auto_detect_summary"
+            android:title="@string/auto_detect_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/manual_entry_category">
+        <EditTextPreference
+            android:key="manual_entry_city_edittext"
+            android:title="@string/manual_entry_city_title"
+            android:summary="@string/manual_entry_city_summary"
+            android:dialogTitle="@string/manual_entry_city_dialog" />
+
+        <EditTextPreference
+            android:key="manual_entry_country_edittext"
+            android:title="@string/manual_entry_country_title"
+            android:summary="@string/manual_entry_country_summary"
+            android:dialogTitle="@string/manual_entry_country_dialog" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/calculation_method_category">
+        <ListPreference
+            android:key="calculation_method_list"
+            android:title="@string/calculation_method_title"
+            android:summary="@string/calculation_method_summary"
+            android:entries="@array/listcalculationmethodsentries"
+            android:entryValues="@array/listcalculationmethodsvalues" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/prayer_notification_category">
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_fajr_athan_notification_switch"
+            android:summary="@string/fajr_notification" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_sunrise_athan_notification_switch"
+            android:summary="@string/sunrise_notification" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_dhuhr_athan_notification_switch"
+            android:summary="@string/dhuhr_notification" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_asr_athan_notification_switch"
+            android:summary="@string/asr_notification" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_maghrib_athan_notification_switch"
+            android:summary="@string/maghrib_notification" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_isha_athan_notification_switch"
+            android:summary="@string/isha_notification" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_morning_azkar_notification_switch"
+            android:summary="@string/morning_azkar_notification" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_evening_azkar_notification_switch"
+            android:summary="@string/evening_azkar_notification" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/athan_sound_category">
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_fajr_athan_sound_switch"
+            android:summary="@string/fajr_athan_sound" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="enable_sunrise_athan_sound_switch"
+            android:summary="@string/sunrise_athan_sound" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_dhuhr_athan_sound_switch"
+            android:summary="@string/dhuhr_athan_sound" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_asr_athan_sound_switch"
+            android:summary="@string/asr_athan_sound" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_maghrib_athan_sound_switch"
+            android:summary="@string/maghrib_athan_sound" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="enable_isha_athan_sound_switch"
+            android:summary="@string/isha_athan_sound" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/support_category">
+        <PreferenceScreen
+            android:title="@string/support_title"
+            android:summary="@string/support_summary">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/support_url" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DisplayPrayerActivity">
+
+    <!-- <ListView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/prayer_timings_list"
+         android:background="@color/white"
+         android:padding="10dp"
+         android:dividerHeight="1dp"
+         android:layout_marginTop="50dp" />-->
+
+    <TextView
+        android:id="@+id/textViewLocal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="26dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textColor="@color/plum"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+          android:id="@+id/imageViewFajr"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="125dp"
+          android:layout_marginStart="20dp"
+          tools:ignore="ContentDescription"
+          app:layout_constraintLeft_toRightOf="@+id/textViewFajr"
+          app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFajr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSunrise"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFajrTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintStart_toStartOf="@+id/textViewSunriseTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFajrTime"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/display_prayer_button_margin_start"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/textViewSunriseTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewSunrise"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="ContentDescription"
+        app:layout_constraintLeft_toRightOf="@+id/textViewSunrise"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDhuhr"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSunriseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintStart_toStartOf="@+id/textViewDhuhrTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSunriseTime"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/display_prayer_button_margin_start"
+        android:layout_marginTop="170dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/textViewDhuhrTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewDhuhr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="ContentDescription"
+        app:layout_constraintLeft_toRightOf="@+id/textViewDhuhr"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDhuhr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAsr"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDhuhrTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintStart_toStartOf="@+id/textViewAsrTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDhuhrTime"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/display_prayer_button_margin_start"
+        android:layout_marginTop="220dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/textViewAsrTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewAsr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="ContentDescription"
+        app:layout_constraintLeft_toRightOf="@+id/textViewAsr"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAsr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMaghrib"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAsrTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintStart_toStartOf="@+id/textViewMaghribTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAsrTime"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/display_prayer_button_margin_start"
+        android:layout_marginTop="270dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/textViewMaghribTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewMaghrib"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="322dp"
+        tools:ignore="ContentDescription"
+        app:layout_constraintLeft_toRightOf="@+id/textViewMaghrib"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMaghrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIsha"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMaghribTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintStart_toStartOf="@+id/textViewIshaTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMaghribTime"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/display_prayer_button_margin_start"
+        android:layout_marginTop="320dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/textViewIshaTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewIsha"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="357dp"
+        tools:ignore="ContentDescription"
+        app:layout_constraintLeft_toRightOf="@+id/textViewIsha"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIsha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="370dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewIshaTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="370dp"
+        android:textSize="@dimen/display_prayer_time_text_size"
+        android:textColor="@color/plum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonIshaTime"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="@dimen/display_prayer_button_margin_start"
+        android:layout_marginTop="370dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/textViewMaghribTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>

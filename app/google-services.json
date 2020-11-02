@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "831468567493",
+    "firebase_url": "https://muslim-buddy-8e6fc.firebaseio.com",
+    "project_id": "muslim-buddy-8e6fc",
+    "storage_bucket": "muslim-buddy-8e6fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831468567493:android:e7c5892ffc67067b",
+        "android_client_info": {
+          "package_name": "okfm.muslimdailydhikr2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831468567493-vhbdt63g04n864t6hu11jjiebbm3agj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXMij8ZOEQTLxB_IT1T2Kbh4XGccEo4xE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

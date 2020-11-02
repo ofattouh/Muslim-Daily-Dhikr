@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listcalculationmethodsentries">
+        <item>Muslim World League</item>
+        <item>Islamic Society of North America</item>
+        <item>Egyptian General Authority of Survey</item>
+        <item>Umm Al-Qura University, Makkah</item>
+        <item>University of Islamic Sciences, Karachi</item>
+        <item>Institute of Geophysics, University of Tehran</item>
+        <item>Shia Ithna-Ashari, Leva Institute, Qum</item>
+        <item>Gulf Region</item>
+        <item>Kuwait</item>
+        <item>Qatar</item>
+        <item>Majlis Ugama Islam Singapura, Singapore</item>
+        <item>Union Organization islamic de France</item>
+        <item>Diyanet İşleri Başkanlığı, Turkey</item>
+    </string-array>
+
+    <string-array name="listcalculationmethodsvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+</resources>

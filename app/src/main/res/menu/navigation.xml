@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/salah_time"
+        android:title="@string/title_prayers"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/navigation_compass"
+        android:icon="@drawable/ic_compass"
+        android:title="@string/title_qibla"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>
